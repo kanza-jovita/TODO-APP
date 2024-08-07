@@ -1,6 +1,7 @@
-
+{% block content %}
 
 <h1>{{ todo.title }}</h1>
 <p>{{ todo.description }}</p>
 <p>Completed: {{ todo.completed }}</p>
 <a href="{% url 'index' %}">Back to list</a>
+{% endblock %}
