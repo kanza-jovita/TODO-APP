@@ -10,7 +10,7 @@
             margin: 0;
         }
         .container {
-            background-color: #fff;
+            background-color: black;
             padding: 2rem;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -37,6 +37,7 @@
         }
         input[type="text"], textarea {
             width: 100%;
+            {% comment %} height: auto; {% endcomment %}
             padding: 0.5rem;
             border: 1px solid #ddd;
             border-radius: 4px;
@@ -67,7 +68,7 @@
     </style>
 
     <div class="container">
-        <h1>Edit Todo</h1>
+        <h1>Add Todo</h1>
         <form method="post">
             {% csrf_token %}
             {{ form.as_p }}
