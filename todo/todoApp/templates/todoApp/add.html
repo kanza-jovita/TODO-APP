@@ -1,0 +1,7 @@
+<h1>Add/Edit Todo</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+</form>
+<a href="{% url 'index' %}">Back to list</a>
